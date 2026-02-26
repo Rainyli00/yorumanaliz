@@ -1,11 +1,5 @@
-# Büyük veri dosyaları 
+# Büyük veri dosyası (447 MB - GitHub 100 MB sınırını aşıyor)
 veri.csv
-dengeli_veri.csv
-hazir_veri.csv
-
-# Model dosyaları
-*.keras
-*.pickle
 
 # Python
 __pycache__/
