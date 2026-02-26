@@ -1,0 +1,17 @@
+# Büyük veri dosyaları 
+veri.csv
+dengeli_veri.csv
+hazir_veri.csv
+
+# Model dosyaları
+*.keras
+*.pickle
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
