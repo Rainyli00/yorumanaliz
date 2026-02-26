@@ -12,7 +12,7 @@ Türkçe e-ticaret yorumlarını **RNN** ve **LSTM** derin öğrenme modelleri i
 - [Proje Mimarisi](#-proje-mimarisi)
 - [Teknolojiler](#-teknolojiler)
 - [Veri Seti](#-veri-seti)
-- [Model Mimarisi](#-model-mimarisi)
+- [Kullanılan Modeller](#-kullanılan-modeller)
 - [Kurulum](#-kurulum)
 - [Kullanım](#-kullanım)
 - [Dosya Yapısı](#-dosya-yapısı)
@@ -212,6 +212,9 @@ yorumanaliz/
 │
 ├── rnn_model.keras        # 🧠 Eğitilmiş RNN modeli
 ├── lstm_model.keras       # 🧠 Eğitilmiş LSTM modeli
+├── tokenizer.pickle       # 📖 Kelime sözlüğü
+├── rnn_history.pickle     # 📉 RNN eğitim geçmişi
+├── lstm_history.pickle    # 📉 LSTM eğitim geçmişi
 │
 ├── yorum.txt              # 🧪 Test yorumları (pozitif, negatif, tuzak)
 │
