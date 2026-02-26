@@ -157,17 +157,19 @@ cd yorumanaliz
 # 2. Gerekli paketleri yükleyin
 pip install streamlit pandas numpy tensorflow scikit-learn plotly matplotlib seaborn
 
-# 3. Veri setini indirin (aşağıdaki linkten indirip proje klasörüne veri.csv olarak kaydedin)
-#    https://huggingface.co/datasets/alibayram/hepsiburada_yorumlar
-
-# 4. Veriyi hazırlayın ve modelleri eğitin:
-python verihazırlık1.py    # Ham veriyi dengeler → dengeli_veri.csv
-python verihazırlık2.py    # Tokenizer oluşturur → tokenizer.pickle + hazir_veri.csv
-python RnnEgitim.py        # RNN modelini eğitir → rnn_model.keras
-python LstmEgitim.py       # LSTM modelini eğitir → lstm_model.keras
+# 3. Uygulamayı başlatın
+streamlit run app.py
 ```
 
-> **⚠️ Not:** Büyük boyutlu dosyalar (CSV, model ve pickle dosyaları) GitHub boyut sınırı nedeniyle repo'ya dahil edilmemiştir. Uygulamayı çalıştırmadan önce veri setini [HuggingFace](https://huggingface.co/datasets/alibayram/hepsiburada_yorumlar)'den indirip 3. ve 4. adımları sırasıyla çalıştırmanız gerekir.
+> **✅** Eğitilmiş modeller ve hazır veriler repo'da mevcuttur. Klonladıktan sonra doğrudan çalıştırabilirsiniz.
+
+> **📌 (Opsiyonel) Modelleri sıfırdan eğitmek isterseniz:**
+> 1. `veri.csv` dosyasını [HuggingFace](https://huggingface.co/datasets/alibayram/hepsiburada_yorumlar)'den indirip proje klasörüne kaydedin
+> 2. Sırasıyla çalıştırın:
+>    - `python verihazırlık1.py` → dengeli_veri.csv
+>    - `python verihazırlık2.py` → tokenizer.pickle + hazir_veri.csv
+>    - `python RnnEgitim.py` → rnn_model.keras
+>    - `python LstmEgitim.py` → lstm_model.keras
 
 ---
 
@@ -204,12 +206,12 @@ yorumanaliz/
 ├── veridagilim.py         # 🥧 Veri dağılımı ve yorum uzunluk grafikleri
 ├── verisayim.py           # 🔢 Ham veri istatistikleri
 │
-├── veri.csv               # 📄 Ham yorum verisi (~380K satır)        → HuggingFace'den indirilir
-├── dengeli_veri.csv       # ⚖️ Dengelenmiş veri                     → verihazırlık1.py ile oluşur
-├── hazir_veri.csv         # ✅ Eğitime hazır veri                    → verihazırlık2.py ile oluşur
+├── veri.csv               # 📄 Ham yorum verisi (~380K satır)        → HuggingFace'den indirilir (repo'da yok)
+├── dengeli_veri.csv       # ⚖️ Dengelenmiş veri
+├── hazir_veri.csv         # ✅ Eğitime hazır veri
 │
-├── rnn_model.keras        # 🧠 Eğitilmiş RNN modeli                 → RnnEgitim.py ile oluşur
-├── lstm_model.keras       # 🧠 Eğitilmiş LSTM modeli                → LstmEgitim.py ile oluşur
+├── rnn_model.keras        # 🧠 Eğitilmiş RNN modeli
+├── lstm_model.keras       # 🧠 Eğitilmiş LSTM modeli
 │
 ├── yorum.txt              # 🧪 Test yorumları (pozitif, negatif, tuzak)
 │
