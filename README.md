@@ -151,7 +151,7 @@ Kullanıcı Yorumu
 
 ```bash
 # 1. Repo'yu klonlayın
-git clone <repo-url>
+git clone https://github.com/Rainyli00/yorumanaliz.git
 cd yorumanaliz
 
 # 2. Gerekli paketleri yükleyin
