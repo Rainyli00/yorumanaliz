@@ -206,7 +206,7 @@ yorumanaliz/
 ├── veridagilim.py         # 🥧 Veri dağılımı ve yorum uzunluk grafikleri
 ├── verisayim.py           # 🔢 Ham veri istatistikleri
 │
-├── veri.csv               # 📄 Ham yorum verisi (~380K satır)        → HuggingFace'den indirilir (repo'da yok)
+├── veri.csv               # 📄 Ham yorum verisi → HuggingFace'den indirilir (repo'da yok)
 ├── dengeli_veri.csv       # ⚖️ Dengelenmiş veri
 ├── hazir_veri.csv         # ✅ Eğitime hazır veri
 │
