@@ -269,7 +269,6 @@ Proje aşağıdaki metriklerle değerlendirilmektedir:
 | **Recall** | Gerçek pozitiflerin ne kadarının yakalandığı |
 | **F1-Score** | Precision ve Recall'un harmonik ortalaması |
 | **AUC** | ROC eğrisi altında kalan alan |
-| **MCC** | Matthews Korelasyon Katsayısı (dengesiz veriler için güçlü metrik) |
 
 Görselleştirme scriptleri:
 - `metriklerveloss.py` → Tüm metriklerin bar grafik karşılaştırması + Loss/Accuracy eğrileri
